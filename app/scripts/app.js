@@ -4,7 +4,8 @@ var app = angular.module('angNewsApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'firebase'
 ]);
 app.config(function ($routeProvider) {
   $routeProvider
@@ -16,3 +17,5 @@ app.config(function ($routeProvider) {
       redirectTo: '/'
     });
 });
+
+app.constant('FIREBASE_URL','https://aaron-thinkster.firebaseio.com/');
